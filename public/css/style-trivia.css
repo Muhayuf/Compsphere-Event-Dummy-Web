@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "League Spartan", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #32159B;
+  background: linear-gradient(to right, #32159B 0%, #FF00FF 100%);
+}
+
+.split.right h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.split.left h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.btn-tri {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
+.split.left .btn-tri:hover {
+  background-color: #32159B;
+  border-color: #32159B;
+}
+
+.split.right .btn-tri:hover {
+  background-color: #FF00FF;
+  border-color: #FF00FF;  
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #32159B;
+  background: linear-gradient(to right, #32159B 0%, #FF00FF 100%);
+  margin-top: 80px;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  background: url('ps.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff00ffa0;
+}
+
+.split.right {
+  right: 0;
+  background: url('xbox.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #32159b9d;
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 100%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 100%;
+}
+
+.hover-right .left {
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn-tri {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
