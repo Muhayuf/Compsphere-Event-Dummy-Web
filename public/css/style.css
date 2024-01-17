@@ -57,7 +57,6 @@ body {
 }
 
 /* navbar styles */
-
 .navbar {
   display: flex;
   align-items: center;
@@ -75,27 +74,33 @@ body {
 .menu a {
   text-decoration: none;
   color: inherit;
+  padding: 3px 3px;
+  border-radius: 5px;
 }
 .menu a:hover, .menu a.active {
   color: #32159B;
-  border-radius: 5px;
   background-color: white;
-  border: 5px solid white;
-  padding: 3px 3px;
+  border: solid white;
 }
 .navLogo {
   margin: 0 80px;
 }
 .list {
+  width: 100%;
+  /* border: 1px solid black; */
   color: white;
   font-weight: 600;
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   gap: 25px;
   margin: 0;
   padding: 0 20px;
   position: relative;
 }
+/* .dropdown {
+
+} */
 .login {
   color: white;
   background-color: #32159B;
