@@ -19,7 +19,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href='/cp'>Competitive Programming</a></li>
-            <li><a class="dropdown-item" href="/ctf">Capture The Fla</a></li>
+            <li><a class="dropdown-item" href="/ctf">Capture The Flag</a></li>
             <li><a class="dropdown-item" href="/uiux">UI/UX</a></li>
             <li><a class="dropdown-item" href="/erp">Enterprising Resourse Planning</a></li>
           </ul>
